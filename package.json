@@ -1,5 +1,5 @@
 {
-  "name": "esy-reason-project",
+  "name": "esy-minimal-ocamlbuild-project",
   "version": "0.1.0",
   "description": "Reason workflow with Esy",
   "license": "MIT",
@@ -8,6 +8,11 @@
       [
         "ocamlbuild",
         "HelloWorld.native"
+      ],
+      [
+          "cp",
+          "_build/HelloWorld.native",
+          "_build/HelloWorld.native.exe"
       ]
     ],
     "buildsInSource": "_build"
