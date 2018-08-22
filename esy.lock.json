@@ -1,0 +1,57 @@
+{
+  "hash": "0bd2af7f921012459a0e0f9fc47a0dd9",
+  "root": "esy-reason-project@path:.",
+  "node": {
+    "ocaml@4.6.4": {
+      "record": {
+        "name": "ocaml",
+        "version": "4.6.4",
+        "source":
+          "archive:https://registry.npmjs.org/ocaml/-/ocaml-4.6.4.tgz#sha1:315bc4f8231b605674306715ce362dfaf42fee2c",
+        "files": [],
+        "opam": null
+      },
+      "dependencies": []
+    },
+    "esy-reason-project@path:.": {
+      "record": {
+        "name": "esy-reason-project",
+        "version": "path:.",
+        "source": "path:.",
+        "files": [],
+        "opam": null
+      },
+      "dependencies": [ "@opam/ocamlbuild@opam:0.12.0", "ocaml@4.6.4" ]
+    },
+    "@opam/ocamlbuild@opam:0.12.0": {
+      "record": {
+        "name": "@opam/ocamlbuild",
+        "version": "opam:0.12.0",
+        "source": [
+          "archive:https://opam.ocaml.org/archives/ocamlbuild.0.12.0+opam.tar.gz#md5:6e877d7f40c119c0c6c03f04342f2264",
+          "archive:https://github.com/ocaml/ocamlbuild/archive/0.12.0.tar.gz#md5:442baa19470bd49150f153122e22907b"
+        ],
+        "files": [],
+        "opam": {
+          "name": "ocamlbuild",
+          "version": "0.12.0",
+          "opam":
+            "opam-version: \"1.2\"\nname: \"ocamlbuild\"\nversion: \"0.12.0\"\nmaintainer: \"Gabriel Scherer <gabriel.scherer@gmail.com>\"\nauthors: [\"Nicolas Pouillard\" \"Berke Durak\"]\nlicense: \"LGPL-2 with OCaml linking exception\"\nhomepage: \"https://github.com/ocaml/ocamlbuild/\"\ndoc: \"https://github.com/ocaml/ocamlbuild/blob/master/manual/manual.adoc\"\nbug-reports: \"https://github.com/ocaml/ocamlbuild/issues\"\nconflicts: [\n  \"base-ocamlbuild\"\n  \"ocamlfind\" {< \"1.6.2\"}\n]\navailable: ocaml-version >= \"4.03\"\nbuild: [\n  [\n    make\n    \"-f\"\n    \"configure.make\"\n    \"all\"\n    \"OCAMLBUILD_PREFIX=%{prefix}%\"\n    \"OCAMLBUILD_BINDIR=%{bin}%\"\n    \"OCAMLBUILD_LIBDIR=%{lib}%\"\n    \"OCAMLBUILD_MANDIR=%{man}%\"\n    \"OCAML_NATIVE=%{ocaml-native}%\"\n    \"OCAML_NATIVE_TOOLS=%{ocaml-native}%\"\n  ]\n  [make \"check-if-preinstalled\" \"all\" \"opam-install\"]\n]\ndev-repo: \"git+https://github.com/ocaml/ocamlbuild.git\"",
+          "override": null
+        }
+      },
+      "dependencies": [ "@esy-ocaml/substs@0.0.1" ]
+    },
+    "@esy-ocaml/substs@0.0.1": {
+      "record": {
+        "name": "@esy-ocaml/substs",
+        "version": "0.0.1",
+        "source":
+          "archive:https://registry.npmjs.org/@esy-ocaml/substs/-/substs-0.0.1.tgz#sha1:59ebdbbaedcda123fc7ed8fb2b302b7d819e9a46",
+        "files": [],
+        "opam": null
+      },
+      "dependencies": []
+    }
+  }
+}
