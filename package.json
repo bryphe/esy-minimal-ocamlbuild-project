@@ -1,5 +1,5 @@
 {
-  "name": "esy-reason-project",
+  "name": "esy-minimal-ocamlbuild-project",
   "version": "0.1.0",
   "description": "Reason workflow with Esy",
   "license": "MIT",
@@ -8,15 +8,20 @@
       [
         "ocamlbuild",
         "HelloWorld.native"
+      ],
+      [
+          "cp",
+          "_build/HelloWorld.native",
+          "_build/HelloWorld.native.exe"
       ]
     ],
     "buildsInSource": "_build"
   },
   "peerDependencies": {
-    "ocaml": "~4.6.0"
+    "ocaml": "esy-ocaml/ocaml#6aacc05"
   },
   "devDependencies": {
-    "ocaml": "~4.6.0"
+    "ocaml": "esy-ocaml/ocaml#6aacc05"
   }, 
   "dependencies": {
     "@opam/ocamlbuild": "0.12.0"
