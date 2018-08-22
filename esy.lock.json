@@ -1,27 +1,29 @@
 {
-  "hash": "0bd2af7f921012459a0e0f9fc47a0dd9",
-  "root": "esy-reason-project@path:.",
+  "hash": "8b04c504c95ac829eb1613fa5d2c293d",
+  "root": "esy-minimal-ocamlbuild-project@path:.",
   "node": {
-    "ocaml@4.6.4": {
+    "ocaml@github:esy-ocaml/ocaml#6aacc05": {
       "record": {
         "name": "ocaml",
-        "version": "4.6.4",
-        "source":
-          "archive:https://registry.npmjs.org/ocaml/-/ocaml-4.6.4.tgz#sha1:315bc4f8231b605674306715ce362dfaf42fee2c",
+        "version": "github:esy-ocaml/ocaml#6aacc05",
+        "source": "github:esy-ocaml/ocaml#6aacc05",
         "files": [],
         "opam": null
       },
       "dependencies": []
     },
-    "esy-reason-project@path:.": {
+    "esy-minimal-ocamlbuild-project@path:.": {
       "record": {
-        "name": "esy-reason-project",
+        "name": "esy-minimal-ocamlbuild-project",
         "version": "path:.",
         "source": "path:.",
         "files": [],
         "opam": null
       },
-      "dependencies": [ "@opam/ocamlbuild@opam:0.12.0", "ocaml@4.6.4" ]
+      "dependencies": [
+        "@opam/ocamlbuild@opam:0.12.0",
+        "ocaml@github:esy-ocaml/ocaml#6aacc05"
+      ]
     },
     "@opam/ocamlbuild@opam:0.12.0": {
       "record": {
