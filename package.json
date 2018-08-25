@@ -18,10 +18,10 @@
     "buildsInSource": "_build"
   },
   "peerDependencies": {
-    "ocaml": "esy-ocaml/ocaml#6aacc05"
+    "ocaml": "~4.6.0"
   },
   "devDependencies": {
-    "ocaml": "esy-ocaml/ocaml#6aacc05"
+    "ocaml": "~4.6.0"
   }, 
   "dependencies": {
     "@opam/ocamlbuild": "0.12.0"
