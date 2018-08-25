@@ -1,12 +1,13 @@
 {
-  "hash": "8b04c504c95ac829eb1613fa5d2c293d",
+  "hash": "0bd2af7f921012459a0e0f9fc47a0dd9",
   "root": "esy-minimal-ocamlbuild-project@path:.",
   "node": {
-    "ocaml@github:esy-ocaml/ocaml#6aacc05": {
+    "ocaml@4.6.5": {
       "record": {
         "name": "ocaml",
-        "version": "github:esy-ocaml/ocaml#6aacc05",
-        "source": "github:esy-ocaml/ocaml#6aacc05",
+        "version": "4.6.5",
+        "source":
+          "archive:https://registry.npmjs.org/ocaml/-/ocaml-4.6.5.tgz#sha1:23b6d4dc36437f431c427953a5236447e7b51368",
         "files": [],
         "opam": null
       },
@@ -20,10 +21,7 @@
         "files": [],
         "opam": null
       },
-      "dependencies": [
-        "@opam/ocamlbuild@opam:0.12.0",
-        "ocaml@github:esy-ocaml/ocaml#6aacc05"
-      ]
+      "dependencies": [ "@opam/ocamlbuild@opam:0.12.0", "ocaml@4.6.5" ]
     },
     "@opam/ocamlbuild@opam:0.12.0": {
       "record": {
