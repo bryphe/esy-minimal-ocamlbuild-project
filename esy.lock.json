@@ -45,8 +45,10 @@
                 "OCAMLBUILD_BINDIR=#{self.bin}",
                 "OCAMLBUILD_LIBDIR=#{self.lib}",
                 "OCAMLBUILD_MANDIR=#{self.man}", "OCAMLBUILD_NATIVE=true",
-                "OCAMLBUILD_NATIVE_TOOLS=true",
-                "EXE=#{os == 'windows' ? '.exe' : ''}"
+                "OCAMLBUILD_NATIVE_TOOLS=true"
+              ],
+              [
+                "cp", "#{self.bin}/ocamlbuild", "#{self.bin}/ocamlbuild.exe"
               ],
               [ "make", "check-if-preinstalled", "all", "opam-install" ]
             ]
