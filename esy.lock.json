@@ -47,7 +47,7 @@
                 "OCAMLBUILD_MANDIR=#{self.man}", "OCAMLBUILD_NATIVE=true",
                 "OCAMLBUILD_NATIVE_TOOLS=true"
               ],
-              [ "make", "check-if-preinstalled", "all", "opam-install" ]
+              [ "make", "check-if-preinstalled", "all" ]
             ]
           }
         }
