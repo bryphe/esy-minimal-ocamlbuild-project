@@ -47,7 +47,10 @@
                 "OCAMLBUILD_MANDIR=#{self.man}", "OCAMLBUILD_NATIVE=true",
                 "OCAMLBUILD_NATIVE_TOOLS=true"
               ],
-              [ "make", "check-if-preinstalled", "all", "install-bin" ]
+              [
+                "make", "check-if-preinstalled", "all",
+                "#{os == 'windows' ? 'install-bin' : 'opam-install'}"
+              ]
             ]
           }
         }
